@@ -2,7 +2,7 @@
 //  WebServices.swift
 //  NasaAstronomy
 //
-//  Created by netset on 19/05/23.
+//  Created by Mohit on 19/05/23.
 //
 
 import UIKit
@@ -66,6 +66,8 @@ class CommonMethod {
         view.present(alert, animated: true, completion: nil)
     }
     
+    
+    
 }
 
 //MARK: - CREATE EXTENSION ADD QUERIES IN URL
@@ -74,5 +76,17 @@ extension URL {
         var components = URLComponents(url: self, resolvingAgainstBaseURL: true)
         components?.queryItems = queries.map { URLQueryItem(name: $0.key, value: $0.value) }
         return components?.url
+    }
+}
+
+//MARK: - CREATE EXTENSION FOR GIVING RIGHT IMAGE TO TEXTFIELD
+extension UITextField {
+    func rightImage(image:UIImage,imgW:Int,imgH:Int)  {
+        let iconView = UIImageView(frame: CGRect(x: 8, y: 0, width: imgW, height: imgW))
+        iconView.image = image
+        let iconContainerView: UIView = UIView(frame: CGRect(x: 8, y: 0, width: imgW + 8, height: imgW))
+        iconContainerView.addSubview(iconView)
+        rightView = iconContainerView
+        rightViewMode = .always
     }
 }

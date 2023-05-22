@@ -60,11 +60,11 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="DUy-te-bbz"/>
+                                    <constraint firstItem="nSx-L5-g3N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VZu-qv-uP7" secondAttribute="trailing" constant="20" id="EJ2-Td-8Vy"/>
                                     <constraint firstAttribute="bottom" secondItem="VZu-qv-uP7" secondAttribute="bottom" id="JGn-pa-LDp"/>
                                     <constraint firstItem="VZu-qv-uP7" firstAttribute="top" secondItem="JeB-fL-zu3" secondAttribute="top" id="UuS-7e-BiA"/>
                                     <constraint firstItem="VZu-qv-uP7" firstAttribute="leading" secondItem="JeB-fL-zu3" secondAttribute="leading" constant="20" id="XIb-ez-ECd"/>
                                     <constraint firstAttribute="trailing" secondItem="nSx-L5-g3N" secondAttribute="trailing" constant="20" id="ghJ-kg-zTl"/>
-                                    <constraint firstItem="nSx-L5-g3N" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VZu-qv-uP7" secondAttribute="trailing" constant="20" id="hzw-MX-8Rm"/>
                                     <constraint firstItem="nSx-L5-g3N" firstAttribute="top" secondItem="JeB-fL-zu3" secondAttribute="top" constant="8" id="ivA-8g-ESv"/>
                                     <constraint firstAttribute="bottom" secondItem="nSx-L5-g3N" secondAttribute="bottom" constant="8" id="o0N-cU-R0P"/>
                                 </constraints>
@@ -264,8 +264,8 @@
     <resources>
         <image name="home" width="25" height="25"/>
         <image name="magazine" catalog="system" width="110" height="128"/>
-        <image name="star" catalog="system" width="128" height="116"/>
         <image name="star" width="25" height="25"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

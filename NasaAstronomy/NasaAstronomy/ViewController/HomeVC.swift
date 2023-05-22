@@ -2,13 +2,13 @@
 //  ViewController.swift
 //  NasaAstronomy
 //
-//  Created by netset on 19/05/23.
+//  Created by Mohit on 19/05/23.
 //
 
 import UIKit
 
 class HomeVC: UIViewController {
-
+    
     //MARK: - IBOUTLET OF HOME VIEW PROPERTIES
     @IBOutlet var baseVwProperties: HomeViewProperties!
     
@@ -19,9 +19,8 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.baseVwProperties.delegateMethod = self
-        DispatchQueue.main.async {
-            self.checkConnection(date: CommonMethod.shared.getStringFromDate(date: Date(), needFormat: DateFormate.yymmdd))
-        }
+        self.checkConnection(date: CommonMethod.shared.getStringFromDate(date: Date(), needFormat: DateFormate.yymmdd))
+        
     }
 }
 

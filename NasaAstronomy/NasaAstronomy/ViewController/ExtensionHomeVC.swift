@@ -2,7 +2,7 @@
 //  ExtensionHomeVC.swift
 //  NasaAstronomy
 //
-//  Created by Netset on 21/05/23.
+//  Created by Mohit on 21/05/23.
 //
 
 import Foundation
@@ -40,9 +40,10 @@ extension HomeVC: HomeVwDelegateMethod {
     
     //MARK: - SET DATA
     func setData(date: String) {
-       
         CoreData.shared.getAstronomyListMethod() { astronomyListArr in
-            self.baseVwProperties.setData(astronomyListArr.filter({$0.date == date}).first ?? AstronomyDetailsModel())
+            DispatchQueue.main.async {
+                self.baseVwProperties.setData(astronomyListArr.filter({$0.date == date}).first ?? AstronomyDetailsModel())
+            }
         }
     }
     

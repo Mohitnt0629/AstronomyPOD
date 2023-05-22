@@ -2,7 +2,7 @@
 //  HomeViewProperties.swift
 //  NasaAstronomy
 //
-//  Created by netset on 19/05/23.
+//  Created by Mohit on 19/05/23.
 //
 
 import UIKit
@@ -28,6 +28,7 @@ class HomeViewProperties: UIView {
     
     override func awakeFromNib() {
         tfDate.delegate = self
+        tfDate.rightImage(image: UIImage(named: "edit") ?? UIImage(), imgW: 10, imgH: 10)
         tfDate.text = CommonMethod.shared.getStringFromDate(date: Date(), needFormat: DateFormate.yyyyMmmDd)
         setToolbarDoneAction()
     }
@@ -48,8 +49,7 @@ class HomeViewProperties: UIView {
     
     //MARK: - SET THE DATA IN UI
     func setData(_ data: AstronomyDetailsModel) {
-        lblTitle.text = data.title
-        btnFav.isSelected = data.favourite 
+
         if let imageUrl = URL(string: data.url ) {
             CommonMethod.shared.getImageFromURL(url: imageUrl) { image in
                 if let image = image {
@@ -62,7 +62,8 @@ class HomeViewProperties: UIView {
             }
         }
         lblExplanation.text = data.explanation
-        
+        lblTitle.text = data.title
+        btnFav.isSelected = data.favourite
     }
     
     //MARK: - IBACTION

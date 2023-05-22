@@ -21,8 +21,8 @@
 		AE8953672A177D5D004F9C47 /* FavouriteListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8953662A177D5D004F9C47 /* FavouriteListTVC.swift */; };
 		AE8953692A1784E7004F9C47 /* CommonMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8953682A1784E7004F9C47 /* CommonMethod.swift */; };
 		AE89536B2A1786BE004F9C47 /* AstronomyDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89536A2A1786BE004F9C47 /* AstronomyDetailsModel.swift */; };
-		AECF23AA2A17425D00900EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF23A92A17425D00900EF1 /* AppDelegate.swift */; };
-		AECF23AC2A17425D00900EF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF23AB2A17425D00900EF1 /* SceneDelegate.swift */; };
+		AE9165ED2A1B24FD002A149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9165EB2A1B24FD002A149B /* AppDelegate.swift */; };
+		AE9165EE2A1B24FD002A149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9165EC2A1B24FD002A149B /* SceneDelegate.swift */; };
 		AECF23AE2A17425D00900EF1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF23AD2A17425D00900EF1 /* HomeVC.swift */; };
 		AECF23B12A17425D00900EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECF23AF2A17425D00900EF1 /* Main.storyboard */; };
 		AECF23B32A17425F00900EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECF23B22A17425F00900EF1 /* Assets.xcassets */; };
@@ -44,9 +44,9 @@
 		AE8953662A177D5D004F9C47 /* FavouriteListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListTVC.swift; sourceTree = "<group>"; };
 		AE8953682A1784E7004F9C47 /* CommonMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethod.swift; sourceTree = "<group>"; };
 		AE89536A2A1786BE004F9C47 /* AstronomyDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyDetailsModel.swift; sourceTree = "<group>"; };
+		AE9165EB2A1B24FD002A149B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE9165EC2A1B24FD002A149B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AECF23A62A17425D00900EF1 /* NasaAstronomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAstronomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AECF23A92A17425D00900EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AECF23AB2A17425D00900EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AECF23AD2A17425D00900EF1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		AECF23B02A17425D00900EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AECF23B22A17425F00900EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,15 +65,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AE7275542A1A11FE009EA025 /* AppUtility  */ = {
-			isa = PBXGroup;
-			children = (
-				AECF23A92A17425D00900EF1 /* AppDelegate.swift */,
-				AECF23AB2A17425D00900EF1 /* SceneDelegate.swift */,
-			);
-			path = "AppUtility ";
-			sourceTree = "<group>";
-		};
 		AE7275552A1A1214009EA025 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +136,15 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		AE9165EA2A1B24FD002A149B /* AppUtility  */ = {
+			isa = PBXGroup;
+			children = (
+				AE9165EB2A1B24FD002A149B /* AppDelegate.swift */,
+				AE9165EC2A1B24FD002A149B /* SceneDelegate.swift */,
+			);
+			path = "AppUtility ";
+			sourceTree = "<group>";
+		};
 		AECF239D2A17425D00900EF1 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +164,7 @@
 		AECF23A82A17425D00900EF1 /* NasaAstronomy */ = {
 			isa = PBXGroup;
 			children = (
+				AE9165EA2A1B24FD002A149B /* AppUtility  */,
 				AE7275662A1A2CC2009EA025 /* CoreData */,
 				AE7275652A1A2CB8009EA025 /* Constant */,
 				AE7275602A1A283B009EA025 /* ViewModel */,
@@ -172,7 +173,6 @@
 				AE7275582A1A1265009EA025 /* Model */,
 				AE7275572A1A124D009EA025 /* View */,
 				AE7275552A1A1214009EA025 /* ViewController */,
-				AE7275542A1A11FE009EA025 /* AppUtility  */,
 				AECF23AF2A17425D00900EF1 /* Main.storyboard */,
 				AECF23B22A17425F00900EF1 /* Assets.xcassets */,
 				AECF23B42A17425F00900EF1 /* LaunchScreen.storyboard */,
@@ -259,14 +259,14 @@
 				AE7275642A1A29A8009EA025 /* CoreData.swift in Sources */,
 				AE7275702A1A7C18009EA025 /* InternetConnection.swift in Sources */,
 				AE8953672A177D5D004F9C47 /* FavouriteListTVC.swift in Sources */,
+				AE9165EE2A1B24FD002A149B /* SceneDelegate.swift in Sources */,
 				AE8953692A1784E7004F9C47 /* CommonMethod.swift in Sources */,
+				AE9165ED2A1B24FD002A149B /* AppDelegate.swift in Sources */,
 				AE8953632A177BB1004F9C47 /* HomeViewProperties.swift in Sources */,
 				AE72756A2A1A619F009EA025 /* ExtensionFavouriteListVC.swift in Sources */,
 				AECF23AE2A17425D00900EF1 /* HomeVC.swift in Sources */,
 				AE7275682A1A2CF4009EA025 /* Constant.swift in Sources */,
 				AE72756E2A1A6E32009EA025 /* FavouriteListTV.swift in Sources */,
-				AECF23AA2A17425D00900EF1 /* AppDelegate.swift in Sources */,
-				AECF23AC2A17425D00900EF1 /* SceneDelegate.swift in Sources */,
 				AE72755C2A1A1D82009EA025 /* ExtensionHomeVC.swift in Sources */,
 				AE72756C2A1A6D0F009EA025 /* FavouriteVwProperties.swift in Sources */,
 			);
